@@ -1,3 +1,5 @@
+require "pry"
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -24,6 +26,7 @@ def list(songs)
     puts "#{index}. #{value}"
     songs_index[value] = index+1   
   end
+  binding.pry 
   p songs_index
 end
 
