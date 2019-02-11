@@ -35,16 +35,10 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   
-  while counter < songs.length
-    if user_input == songs[counter]
-      puts "Playing #{songs[counter]}"
-      counter += 1
-    elsif user_input == counter+1.to_s
-      puts "Playing #{songs[counter]}"
-      counter += 1
-    else
-      puts "Invalid input, please try again"
-    end
+  if songs_index(songs).include? user_input
+    puts "Playing #{value}"
+  else
+    puts "Invalid input, please try again"
   end
   
 end
