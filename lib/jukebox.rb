@@ -31,6 +31,7 @@ end
 
 def play(songs)
   counter=0 
+  hsongs={}
   hsongs[list(songs).map{|(k,v)| [k.to_s,v]}]
   
   puts "Please enter a song name or number:"
