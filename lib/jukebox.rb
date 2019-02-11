@@ -38,7 +38,7 @@ def play(songs)
   p list(songs)
   if list(songs).values.include? user_input
     puts "Playing #{user_input}"
-  elsif user_input.is_a? Integer
+  elsif list(songs).values.include? user_input
     puts "Playing #{list(songs)[user_input]}"
     
   else
