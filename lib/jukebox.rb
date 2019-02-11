@@ -38,12 +38,11 @@ def play(songs)
   p hsongs.keys
   if hsongs.values.include? user_input
     puts "Playing #{user_input}"
-  elsif hsongs.keys.include? user_input
+  elsif hsongs.keys.include? user_input.to_s 
     puts "Playing"
     
   else
     puts "Invalid input, please try again"
-    play(songs)
   end
   
 end
