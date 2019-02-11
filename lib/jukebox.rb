@@ -34,7 +34,6 @@ def play(songs)
   hsongs=list(songs).map{|(k,v)| [k.to_s,v]}.to_h 
   puts "Please enter a song name or number:"
   user_input = gets.chomp
-  p hsongs.keys
   if hsongs.values.include? user_input
     puts "Playing #{user_input}"
   elsif hsongs.keys.include? user_input
