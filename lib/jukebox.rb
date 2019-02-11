@@ -31,8 +31,8 @@ end
 
 def play(songs)
   counter=0 
-  hsongs={}
-  hsongs[list(songs).map{|(k,v)| [k.to_s,v]}]
+  
+  hsongs=list(songs).map{|(k,v)| [k.to_s,v]}.to_h 
   
   puts "Please enter a song name or number:"
   user_input = gets.chomp
