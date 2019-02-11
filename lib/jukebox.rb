@@ -36,7 +36,7 @@ def play(songs)
   user_input = gets.chomp
   
   if list(songs).include? user_input
-    puts "Playing #{value}"
+    puts "Playing #{user_input}"
   else
     puts "Invalid input, please try again"
   end
