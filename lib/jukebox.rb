@@ -19,15 +19,21 @@ def help
 end
 
 def list(songs)
-  songs.each_with_index(1) do |value, index|
-    puts "#{index}. #{value}"
+  songs.each_with_index do |value, index|
+    puts "#{index+1}. #{value}"
   end
+  
 end
 
 def play(songs)
+  counter=0 
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   
+  while counter < songs.length
+    if 
+    counter += 1
+  end
   
 end
 
