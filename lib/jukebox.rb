@@ -19,10 +19,12 @@ def help
 end
 
 def list(songs)
+  songs_index = {}
   songs.each_with_index do |value, index|
-    puts "#{index+1}. #{value}"
+    puts "#{index}. #{value}"
+    songs_index[value] = index+1   
   end
-  
+  p songs_index
 end
 
 def play(songs)
