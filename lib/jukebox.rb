@@ -33,7 +33,6 @@ def play(songs)
   user_input = gets.chomp
   
   while counter < songs.length
-    if 
     counter += 1
   end
   
