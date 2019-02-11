@@ -31,9 +31,7 @@ end
 
 def play(songs)
   counter=0 
-  
   hsongs=list(songs).map{|(k,v)| [k.to_s,v]}.to_h 
-  
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   p hsongs.keys
@@ -41,11 +39,9 @@ def play(songs)
     puts "Playing #{user_input}"
   elsif hsongs.keys.include? user_input
     puts "Playing #{hsongs[user_input]}"
-    
   else
     puts "Invalid input, please try again"
   end
-  
 end
 
 def exit_jukebox
