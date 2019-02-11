@@ -32,6 +32,7 @@ end
 def play(songs)
   counter=0 
   hsongs=list(songs)
+  p hsongs.keys.to_s 
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   if user_input.to_i < 
