@@ -38,7 +38,9 @@ def play(songs)
   
   if list(songs).include? user_input
     puts "Playing #{user_input}"
-  elsif user
+  elsif list(songs).keys.include? user_input
+    puts "Playing #{user_input}"
+    
   else
     puts "Invalid input, please try again"
   end
