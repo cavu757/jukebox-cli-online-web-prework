@@ -20,12 +20,14 @@ end
 
 def list(songs)
   songs.each_with_index do |value, index|
-    puts "#{index}. #{value}"
+    puts "#{index+1}. #{value}"
   end
 end
 
 def play(songs)
   puts "Please enter a song name or number:"
+  user_input = gets.chomp
+  
   
 end
 
