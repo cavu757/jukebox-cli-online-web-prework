@@ -31,16 +31,15 @@ end
 
 def play(songs)
   counter=0 
-  hsongs=list(songs)
-  while counter < hsongs.count
-    hsong
+  hsongs[list(songs).map{|(k,v)| [k.to_s,v]}]
+  
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   
   if hsongs.values.include? user_input
     puts "Playing #{user_input}"
-  elsif hsongs.keys.include? user_input.to_s 
-    puts "Playing"
+  elsif hsongs.keys.include? user_input
+    puts "Playing #{hsongs[user_input]}"
     
   else
     puts "Invalid input, please try again"
