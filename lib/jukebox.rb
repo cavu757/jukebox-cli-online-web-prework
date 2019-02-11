@@ -32,11 +32,13 @@ end
 
 def play(songs)
   counter=0 
+  list(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   
   if list(songs).include? user_input
     puts "Playing #{user_input}"
+  elsif user
   else
     puts "Invalid input, please try again"
   end
@@ -56,7 +58,6 @@ def run(songs)
     if user_command == "list"
       list(songs)
     elsif user_command == "play"
-      list(songs)
       play(songs)
     elsif user_command == "help"
       help
