@@ -26,8 +26,6 @@ def list(songs)
     puts "#{index+1}. #{value}"
     songs_index[index+1] = value   
   end
-  
-  songs_index
 end
 
 def play(songs)
