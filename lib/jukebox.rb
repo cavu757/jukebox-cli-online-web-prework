@@ -35,7 +35,7 @@ def play(songs)
   list(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
-  p list(songs).keys
+  p list(songs)
   if list(songs).include? user_input
     puts "Playing #{user_input}"
   elsif user_input.is_a? Integer
