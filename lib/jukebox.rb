@@ -1,4 +1,4 @@
-require "pry"
+
 
 songs = [
   "Phoenix - 1901",
@@ -23,11 +23,11 @@ end
 def list(songs)
   songs_index = {}
   songs.each_with_index do |value, index|
-    puts "#{index}. #{value}"
+    puts "#{index+1}. #{value}"
     songs_index[value] = index+1   
   end
-  binding.pry 
-  p songs_index
+  
+  songs_index
 end
 
 def play(songs)
@@ -36,6 +36,7 @@ def play(songs)
   user_input = gets.chomp
   
   while counter < songs.length
+    if user_input
     counter += 1
   end
   
