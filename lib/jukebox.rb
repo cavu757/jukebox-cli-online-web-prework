@@ -24,7 +24,7 @@ def list(songs)
   songs_index = {}
   songs.each_with_index do |value, index|
     puts "#{index+1}. #{value}"
-    songs_index[value] = index+1   
+    songs_index[index+1] = value   
   end
   
   songs_index
